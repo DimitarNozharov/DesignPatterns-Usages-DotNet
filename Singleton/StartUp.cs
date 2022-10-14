@@ -1,13 +1,16 @@
 ﻿using NUnit.Framework;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Singleton
 {
 	[TestFixture]
-	internal class Program
+	internal class StartUp
 	{
 		static void Main(string[] args)
 		{
-
 		}
 
 		[Test]
@@ -34,8 +37,30 @@ namespace Singleton
 			Assert.AreEqual(obj1.Text, obj2.Text, $"Expected {nameof(obj1.Text)} values {obj1.Text} and {obj2.Text} to be the same.");
 		}
 
-		//TODO: add test for the multithreading part
+		[Test]
+		public void CheckIfSingleInstanceIsCreatedInMultithreadingEnv()
+		{
+			var tasks = new List<Task<MySingleton>>();
+			int firstIndex = 0;
+			int lastIndex = 100;
+			for (int i = 0; i < lastIndex; i++)
+			{
+				tasks.Add(Task.Run(() =>
+				{
+					var obj = MySingleton.Instance;
+					obj.Text = $"Test{i}";
+					return obj;
+				}));
+			}
+
+			Task.WhenAll(tasks);
+
+			for (int i = 1; i < tasks.Count; i++)
+			{
+				Assert.IsTrue(tasks[0].Result == tasks[i].Result);
+				Assert.AreEqual(tasks[0].Result.Text, tasks[i].Result.Text);
+
+			}
+		}
 	}
-
-
 }

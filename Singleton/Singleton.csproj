@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="MySingleton.cs" />
     <Compile Include="MySingleton_V2.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
