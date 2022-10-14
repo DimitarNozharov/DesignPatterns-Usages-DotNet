@@ -41,9 +41,7 @@ namespace Singleton
 		public void CheckIfSingleInstanceIsCreatedInMultithreadingEnv()
 		{
 			var tasks = new List<Task<MySingleton>>();
-			int firstIndex = 0;
-			int lastIndex = 100;
-			for (int i = 0; i < lastIndex; i++)
+			for (int i = 0; i < 100; i++)
 			{
 				tasks.Add(Task.Run(() =>
 				{
