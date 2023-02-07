@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{AFB04E88-37ED-4F0D-985F-29E26CE4D43C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.SingletonPattern", "Singleton\Creational.SingletonPattern.csproj", "{AFB04E88-37ED-4F0D-985F-29E26CE4D43C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "StructuralPatterns", "{790AB6EE-AABE-4723-9DB9-651F9C8578D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehaviourPatterns", "BehaviourPatterns", "{19B730EB-D8ED-465B-A692-3125B12BAD93}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatePattern", "StatePattern\StatePattern.csproj", "{7CEC08F1-439D-4BD0-ABA7-7E8C7939EE14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Behaviour.StatePattern", "StatePattern\Behaviour.StatePattern.csproj", "{7CEC08F1-439D-4BD0-ABA7-7E8C7939EE14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{A8E5D58C-9CC0-4CAF-8A88-F5D285A6DDE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID Design principles", "SOLID Design principles", "{8C1AAA7B-29C7-433A-A054-3C71BB111443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibility", "SingleResponsibility\SingleResponsibility.csproj", "{9B2B7CB8-4B9D-4670-9388-92BFB34CD837}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple", "SingleResponsibility\SingleResponsibilityPrinciple.csproj", "{9B2B7CB8-4B9D-4670-9388-92BFB34CD837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosed", "OpenClosed\OpenClosed.csproj", "{3CF12AB5-F1CE-445A-A202-7294756B7CB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrinciple", "OpenClosed\OpenClosedPrinciple.csproj", "{3CF12AB5-F1CE-445A-A202-7294756B7CB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +46,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{AFB04E88-37ED-4F0D-985F-29E26CE4D43C} = {A8E5D58C-9CC0-4CAF-8A88-F5D285A6DDE3}
 		{7CEC08F1-439D-4BD0-ABA7-7E8C7939EE14} = {19B730EB-D8ED-465B-A692-3125B12BAD93}
 		{9B2B7CB8-4B9D-4670-9388-92BFB34CD837} = {8C1AAA7B-29C7-433A-A054-3C71BB111443}
 		{3CF12AB5-F1CE-445A-A202-7294756B7CB0} = {8C1AAA7B-29C7-433A-A054-3C71BB111443}
