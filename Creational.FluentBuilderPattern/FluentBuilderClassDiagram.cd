@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Creational.FluentBuilderPattern.Person">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Creational.FluentBuilderPattern.Person.Builder">
+        <TypeIdentifier>
+          <NewMemberFileName>Person.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAkAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creational.FluentBuilderPattern.PersonBuilder">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>PersonBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creational.FluentBuilderPattern.PersonInfoBuilder&lt;SELF&gt;">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersonInfoBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creational.FluentBuilderPattern.PersonJobBuilder&lt;SELF&gt;">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <InheritanceLine Type="Creational.FluentBuilderPattern.PersonInfoBuilder&lt;SELF&gt;" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="4.233" />
+        <Point X="8.75" Y="5.312" />
+        <Point X="7.25" Y="5.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersonJobBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
