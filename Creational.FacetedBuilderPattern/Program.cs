@@ -29,5 +29,6 @@ public class Program
 				.Earning(85000).Build();
 
 		Console.WriteLine(otherPerson);
+
 	}
 }
