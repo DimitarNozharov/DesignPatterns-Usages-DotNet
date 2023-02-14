@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Creational.FacetedBuilderPattern
 {
-	//can be internal class of the facade to not expose outside;
+	//can be private class of the facade to not expose outside;
 	public class PersonAddressBuilder : PersonBuilderFacade
 	{
 		public PersonAddressBuilder(Person person)
@@ -20,7 +20,7 @@ namespace Creational.FacetedBuilderPattern
 			return this;
 		}
 
-		public PersonAddressBuilder In(string city)
+		public PersonAddressBuilder InCity(string city)
 		{
 			Person.City = city;
 			return this;

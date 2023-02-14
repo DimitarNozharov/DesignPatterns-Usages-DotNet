@@ -16,11 +16,13 @@ namespace Creational.FacetedBuilderPattern
 		public PersonAddressBuilder Lives => new PersonAddressBuilder(Person);
 		public PersonJobBuilder Work => new PersonJobBuilder(Person);
 
-		//used for print the result when cast to Person implicitly
+		//used for print the result when cast to Person implicitly or use Build();
 		public static implicit operator Person(PersonBuilderFacade builder)
 		{
 			return builder.Person;
 		}
+
+		public Person Build() => Person;
 
 	}
 }
